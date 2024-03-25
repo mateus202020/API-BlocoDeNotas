@@ -18,7 +18,7 @@ usersRoutes.patch("/avatar", ensureAuthenticated, upload.single("avatar"), userA
 
 usersRoutes.patch("/avatar", 
                     ensureAuthenticated,
-                    upload.single('avatar'),
+                    upload.single("avatar"),
                     (request, response) => {
                         console.log(request.file.filename);
                         response.json();
