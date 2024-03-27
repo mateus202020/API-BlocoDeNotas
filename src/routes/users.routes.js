@@ -3,7 +3,7 @@ const multer = require("multer");
 const uploadConfig = require("../configs/upload");
 
 const UsersController = require("../controllers/UsersController");
-const ensureAuthenticated = require("../middleware/ensureAuthenticatd");
+const ensureAuthenticated = require("../middleware/ensureAuthenticated");
 const UserAvatarController = require("../controllers/UserAvatarController");
 
 const usersRoutes = Router();
